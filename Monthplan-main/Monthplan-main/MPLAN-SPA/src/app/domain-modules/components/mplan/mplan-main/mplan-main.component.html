@@ -1,0 +1,20 @@
+<div class="container-fluid mb-5 maindiv">
+    <app-mplan-action-buttons></app-mplan-action-buttons>
+    <app-mplan-header></app-mplan-header>
+    <app-footer></app-footer>
+    <tabset #tabset>
+        <tab class="countrytab" id="1" heading="{{ 'navigation.Country' | translate }}">            
+            <app-country-form></app-country-form>
+        </tab>
+        <tab class="payertab" id="2" heading="{{ 'navigation.Payers' | translate }}">
+            <app-payer-form></app-payer-form>
+        </tab>
+        <tab class="loadtab" id="3" heading="{{ 'navigation.Load' | translate }}">
+            <app-load-form></app-load-form>
+        </tab>
+        <tab class="feedbacktab" id="4" heading="{{ 'navigation.Note' | translate }}">
+            <app-feedback-form></app-feedback-form>
+        </tab>
+    </tabset>
+
+</div>
